@@ -11,9 +11,15 @@
         android:layout_height="16dp"
         android:max="100"
         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
-    <WebView
-        android:id="@+id/browser_web_view"
+    <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:id="@+id/browser_swipe_layout">
+        <WebView
+            android:id="@+id/browser_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
 </LinearLayout>
